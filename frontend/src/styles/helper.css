@@ -1,0 +1,100 @@
+.text-theme {
+    color: var(--theme-color) !important;
+}
+
+.bg-theme {
+    background-color: var(--theme-color) !important;
+}
+
+.bg-grey {
+    background-color: #e7e7e7 !important;
+}
+
+.hover {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.hover:hover {
+    opacity: 70%;
+}
+
+.so-bold {
+    font-weight: bold;
+    text-shadow:
+        -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black,
+        -1px -1px black, 1px 1px black, -1px 1px black, 1px -1px black;
+}
+
+.theme-so-bold {
+    font-weight: bold;
+    text-shadow:
+        -1px 0 var(--theme-color), 0 1px var(--theme-color), 1px 0 var(--theme-color), 0 -1px var(--theme-color),
+        -1px -1px var(--theme-color), 1px 1px var(--theme-color), -1px 1px var(--theme-color), 1px -1px var(--theme-color);
+}
+
+.line-heght-1 {
+    line-height: 1.8;
+}
+
+.long-text {
+    line-height: 2.1;
+    text-align: justify !important;
+    font-size: 18px
+}
+
+.long-text h1,
+.long-text h2,
+.long-text h3,
+.long-text h4,
+.long-text h5,
+.long-text h6 {
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.long-text a {
+    font-weight: bold;
+    color: var(--theme-color);
+}
+
+@media screen and (max-width: 770px) {
+
+    .so-bold {
+        font-weight: bold;
+        text-shadow:
+            -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black,
+            -0.5px -0.5px black, 0.5px 0.5px black, -0.5px 0.5px black, 0.5px -0.5px black;
+    }
+
+    .theme-so-bold {
+        font-weight: bold;
+        text-shadow:
+            -0.5px 0 var(--theme-color), 0 0.5px var(--theme-color), 0.5px 0 var(--theme-color), 0 -0.5px var(--theme-color),
+            -0.5px -0.5px var(--theme-color), 0.5px 0.5px var(--theme-color), -0.5px 0.5px var(--theme-color), 0.5px -0.5px var(--theme-color);
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .so-bold {
+        font-weight: bold;
+        text-shadow:
+            -0.2px 0 black, 0 0.2px black, 0.2px 0 black, 0 -0.2px black,
+            -0.2px -0.2px black, 0.2px 0.2px black, -0.2px 0.2px black, 0.2px -0.2px black;
+    }
+
+    .theme-so-bold {
+        font-weight: bold;
+        text-shadow:
+            -0.2px 0 var(--theme-color), 0 0.2px var(--theme-color), 0.2px 0 var(--theme-color), 0 -0.2px var(--theme-color),
+            -0.2px -0.2px var(--theme-color), 0.2px 0.2px var(--theme-color), -0.2px 0.2px var(--theme-color), 0.2px -0.2px var(--theme-color);
+    }
+
+    .long-text {
+        font-size: 16px
+    }
+
+}
